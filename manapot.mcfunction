@@ -8,7 +8,7 @@ scoreboard objectives add drinkPot minecraft.used:minecraft.potion
 execute as @e[scores={drinkPot=1..},nbt={SelectedItem:{"tags":"Mana:1b"}}] at @s run function scripts:manapot
 
 
-scoreboard players set @e[scores={drinkPot=1..} drinkPot 0
+scoreboard players set @e[scores={drinkPot=1..}] drinkPot 0
 
 # manapot.mcfunction
 item modify entity @s weapon.mainhand !{Mana:1b}
